@@ -1,1 +1,13 @@
 <h1>INDEX</h1>
+
+
+<% @jobs.each do |job| %>
+	<h3> <%= link_to job_path(job), class: "btn-custom-sm" do %> </h3>
+	<% end %>
+	<h3> <%= job.title %> </h3>
+	<h3> <%= job.created_at %> </h3>
+	<h3> <%= job.status %> </h3>
+<% end %>
+
+
+<%= link_to "New", new_job_path, class: "footer" %>

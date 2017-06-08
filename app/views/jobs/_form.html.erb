@@ -1,0 +1,13 @@
+
+
+
+<div class="form-container">
+
+	<%= simple_form_for @job do |f| %>
+	  <%= f.input :title, label: 'Insert title please', error: 'title is mandatory, please specify one', placeholder: 'Title' %> 
+	  <%= f.input :link, placeholder: 'Link' %>
+	  <%= f.input :notes, placeholder: 'Notes' %>
+	  <%= f.button :submit %>
+	<% end %>
+
+</div>
