@@ -1,12 +1,12 @@
-<h1>INDEX</h1>
 
 
 <% @jobs.each do |job| %>
-	<h3> <%= link_to job_path(job), class: "btn-custom-sm" do %> </h3>
+	<%= link_to job_path(job), class: "btn-custom-sm" do %> 
+			<i class="glyphicon glyphicon-menu-hamburger"></i>
 	<% end %>
 	<h3> <%= job.title %> </h3>
-	<h3> <%= job.created_at %> </h3>
-	<h3> <%= job.status %> </h3>
+	<h4> <%= job.created_at.to_formatted_s(:short) %> </h4>
+	<h4> <%= job.status %> </h4>
 <% end %>
 
 

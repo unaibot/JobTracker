@@ -1,0 +1,8 @@
+<h2> <%= @job.title %> </h2>
+<h3> <%= @job.created_at.to_formatted_s(:short)%> </h3>
+<p>  <%= @job.status  %> </p>      
+
+
+	<%= link_to 'Back', root_path, class: "btn btn-default"  %>
+	<%= link_to 'Edit', edit_job_path(@job), class: "btn btn-default" %>
+  <%= link_to 'Delete', job_path(@job), method: :delete, data: { confirm: "Delete the job?"}, class: "btn btn-default" %>
