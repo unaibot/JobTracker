@@ -13,7 +13,7 @@ gem 'puma', '~> 4.3'
 gem 'sass-rails', '~> 5.0'
 
 gem 'simple_form', '~> 5.0'
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'bootstrap-sass', '~> 3.4'
 gem 'screencap'
 
 gem 'uglifier', '>= 1.3.0'
