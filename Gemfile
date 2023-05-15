@@ -9,7 +9,7 @@ end
 
 gem 'rails', '~> 5.0.3'
 gem 'sqlite3'
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 4.3'
 gem 'sass-rails', '~> 5.0'
 
 gem 'simple_form', '~> 5.0'
